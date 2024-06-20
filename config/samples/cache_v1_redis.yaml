@@ -1,0 +1,10 @@
+apiVersion: cache.ha-ving.store/v1
+kind: Redis
+metadata:
+  labels:
+    app.kubernetes.io/name: redis-standalone
+    app.kubernetes.io/managed-by: kustomize
+  name: redis-sample
+spec:
+  size: 3
+  # TODO(user): Add fields here
